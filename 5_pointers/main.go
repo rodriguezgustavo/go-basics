@@ -18,7 +18,7 @@ func main() {
 
 	fmt.Println("Y Value:" + strconv.Itoa(*y))
 
-	if *y == x {
+	if y == &x {
 		fmt.Println("X & Y are equals")
 
 	} else {
