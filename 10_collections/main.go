@@ -16,7 +16,7 @@ func main() {
 
 	println("\nLoop a slice: ")
 
-	sliceType := make([]int, 0)
+	sliceType := make([]int, 4, 4)
 
 	sliceType = append(sliceType, 1)
 	sliceType = append(sliceType, 2)

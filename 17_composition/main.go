@@ -4,12 +4,19 @@ import (
 	"fmt"
 )
 
-type Animal interface {
-	Eat()
-	Talk()
+type Animal struct {
+}
+
+func (p *Animal) Eat() {
+	fmt.Printf("Is eating... \n")
+}
+
+func (p *Animal) Talk() {
+	fmt.Printf("talking... \n")
 }
 
 type Dog struct {
+	Animal
 	Name string
 	Age  int
 }
@@ -23,6 +30,7 @@ func (p *Dog) Talk() {
 }
 
 type Lion struct {
+	Animal
 	Name string
 	Age  int
 }
@@ -36,25 +44,15 @@ func (p *Lion) Talk() {
 }
 
 func main() {
-	var dog Animal = &Dog{Name: "Pedro", Age: 34}
+	dog := &Dog{Name: "Pedro", Age: 34}
 
 	dog.Eat()
 	dog.Talk()
 
 	fmt.Println("")
 
-	var lion Animal = &Lion{Name: "Tom", Age: 34}
+	lion := &Lion{Name: "Tom", Age: 34}
 
 	lion.Eat()
 	lion.Talk()
-
-	/*
-		animals := []Animal{&Dog{Name: "Pedro", Age: 34}, &Lion{Name: "Tom", Age: 34}}
-
-		for _, animal := range animals {
-			animal.Eat()
-			animal.Talk()
-		}
-	*/
-
 }

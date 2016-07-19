@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-//type x func(string)
+type x func(string)
 
 func main() {
 	//f := getFunction()
@@ -22,6 +22,6 @@ func getFunction() func(string) {
 	return f
 }
 
-func executeFunction(f func(string), value string) {
+func executeFunction(f x, value string) {
 	f(value)
 }
