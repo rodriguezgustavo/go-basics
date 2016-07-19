@@ -1,6 +1,5 @@
 package sort
 
-
 import (
 	"math/rand"
 	"sort"
