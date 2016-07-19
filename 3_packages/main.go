@@ -3,7 +3,7 @@ import (
 	"fmt"
 	"os"
 	"strconv"
-	"github.com/rodriguezgustavo/go-basics/2_packages/math"
+	"github.com/rodriguezgustavo/go-basics/3_packages/math"
 )
 
 func main() {
@@ -14,7 +14,7 @@ func main() {
 			result=math.Add(result,value)
 		}
 	}
-	fmt.Println(result)
+	fmt.Printf("Suma: %d\n",result)
 }
 
 
