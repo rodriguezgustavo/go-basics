@@ -6,6 +6,8 @@ import (
 	"strconv"
 
 	"github.com/rodriguezgustavo/go-basics/3_packages/math"
+
+	"github.com/rodriguezgustavo/go-basics/3_packages/math"
 )
 
 func main() {
